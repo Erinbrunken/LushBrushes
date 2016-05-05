@@ -1,0 +1,1023 @@
+@font-face {
+  font-family: 'ThirstyRoughLt';
+  src: url('../font/ThirstyRoughLt.otf'); /* IE9 Compat Modes */
+  src: url('../font/ThirstyRoughLt.otf'), /* IE6-IE8 */
+       url('../font/ThirstyRoughLt.otf'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */}
+@font-face {
+   font-family: 'Champion-Regular';
+   src: url('../font/Champion-Regular.otf'); /* IE9 Compat Modes */
+   src: url('../font/Champion-Regular.otf'), /* IE6-IE8 */
+       url('../font/Champion-Regular.otf'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */}
+@font-face {
+   font-family: 'Whitney-Book';
+   src: url('../font/Whitney-Book.otf'); /* IE9 Compat Modes */
+   src: url('../font/Whitney-Book.otf'), /* IE6-IE8 */
+       url('../font/Whitney-Book.otf'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */}
+
+/*NORMALISE CSS
+------------------------------------*/
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+ol,
+li,
+a,
+div,
+img,
+i {
+	margin: 0;
+	padding: 0;
+}
+
+/*UNIVERSAL STYLING
+-------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+
+p {line-height: 1.5;padding: 0 2em;}
+
+/*GENERAL LAYOUT
+-------------------------------------*/
+
+.container, footer {
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'Whitney-Book', sans-serif;
+	color: #666;
+	font-size: 14px;
+}
+
+.container {
+	padding-top: 2em;
+}
+
+h2{
+  margin: 60px 0 30px 0;
+  text-align: center;
+  font-family: 'sans-serif';
+  font-size: 2em;
+  color: #363942;
+}
+
+
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #666;
+}
+
+a:hover {
+	color: #fff;
+
+}
+
+.icons {
+	border:1px solid black;
+	padding: 2em;
+	margin: 2em 0;
+	border-radius: 50%;
+	background: #88E11F;
+}
+
+i {
+	font-size: 20px;
+}
+
+.category {
+	
+}
+
+.category h2 {
+	margin: 1.5em 0;
+}
+
+hr {
+	width: 50%;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.footer-lush {
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	font-size: 14px;
+	padding-bottom: 1em;
+}
+
+
+
+/*BACK TO TOP STYLING
+-----------------------------------------------*/
+#backtotop {
+	margin: 4em 0 1em 0;
+	
+	color: #666;
+}
+
+#backtotop a:hover {
+	color: red;
+}
+
+/*NAVIGATION STYLING
+-----------------------------------------------*/
+.header-logos {
+	display: block;
+}
+
+.logo-cans {
+	width: 100%;
+}
+
+
+
+.header-logos h4 {
+	font-size: 20px;
+	margin-top: 0.6em;
+	color: #666;
+}
+
+
+.menu-contact {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.menu-contact a {
+
+	color: #666;
+}
+
+.menu-contact a:hover {
+	color: #ee3234;
+	background: #fff;
+}
+
+#fb_top i {
+	padding-left: -25px;
+}
+
+
+ .toggle, [id^=drop] {
+ display: none;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  background-color: #fff;
+}
+
+nav a {
+  display: block;
+  padding: 0 15px;
+  color: #ee3234;
+  font-size: 18px;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.quote-btn a{background-color: #8fc74a;color:#fff!important}
+
+nav ul li ul li:hover { text-decoration: underline;color: #8a1b24;}
+
+nav a:hover { text-decoration: underline;color: #8a1b24;}
+
+
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 50px;
+}
+
+nav ul li:hover > ul { display: inherit; }
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+
+li > a:after { content: ' +'; }
+
+li > a:only-child:after { content: ''; }
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+#logo {
+  display: block;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  float: none;
+}
+
+nav { margin: 0; }
+
+.toggle + a,
+ .menu { display: none; }
+
+.toggle {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 20px;
+  color: #FFF;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+  border: none;
+}
+
+.toggle:hover { background-color: #000000; }
+
+[id^=drop]:checked + ul { display: block; }
+
+nav ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul ul .toggle,
+ nav ul ul a { padding: 0 40px; }
+
+nav ul ul ul a { padding: 0 80px; }
+
+nav a:hover,
+ nav ul ul ul a { background-color: #000000; }
+
+nav ul li ul li .toggle,
+ nav ul ul a { background-color: #212121; }
+
+nav ul ul {
+  float: none;
+  position: static;
+  color: #ffffff;
+}
+
+nav ul ul li:hover > ul,
+nav ul li:hover > ul { display: none; }
+
+nav ul ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul ul ul li { position: static;}
+}
+
+@media all and (max-width : 330px) {
+
+nav ul li {
+  display: block;
+  width: 94%;}
+}
+
+nav a:hover{
+	background: #ee3234;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Visit http://www.menucool.com/responsive-slider for instructions */
+
+#ninja-slider {
+    width:84%;
+    background:#fff;
+    padding-top:30px;
+    padding-bottom:10px;
+
+    margin:0 auto;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+#ninja-slider.fullscreen {
+    background:black;
+}
+
+#ninja-slider.fullscreen #ninja-slider-prev {
+    left: -50px; 
+}
+#ninja-slider.fullscreen #ninja-slider-next {
+    right: -50px;
+}
+
+
+#ninja-slider .fs-icon {
+    top:0px;
+    right:0px;
+    width:45px;
+    height:45px;
+    background: rgba(0,0,0,0.1) url(fullscreen.png) no-repeat 0 0;
+    z-index:2;
+    opacity:0;
+    -webkit-transition:opacity 0.8s;
+    transition:opacity 0.8s;
+}
+
+#ninja-slider:hover .fs-icon {
+    opacity: 1;
+}
+
+#ninja-slider.fullscreen .fs-icon {
+    background-position: center -45px;
+    opacity:1;
+}
+
+#ninja-slider .slider-inner {
+    max-width:700px;
+    margin:0 auto;/*center-aligned*/
+    font-size:0px;
+    position:relative;
+    box-sizing:border-box;
+}
+
+#ninja-slider.fullscreen .slider-inner {
+    max-width:900px;
+    max-height:80%;
+}
+
+#ninja-slider ul {
+    /*overflow:hidden;*/
+    position:relative;
+    list-style:none;
+    padding:0;
+    box-sizing:border-box;
+}
+
+#ninja-slider li {
+    background-color:#111;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    position: absolute;
+    font-size:12px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    opacity:0;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+#ninja-slider li.ns-show {
+    opacity:1;
+}
+
+
+
+/* --------- slider image ------- */  
+#ninja-slider .ns-img {
+    background-color:rgba(0,0,0,0.3);
+    background-size:contain;/*Note: If transitionType is zoom, it will be overridden to cover.*/
+
+    border-radius:3px;
+
+    cursor:default;
+    display:block;
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+
+/* ---------Arrow buttons ------- */   
+/* The arrow button id should be: slider id + ("-prev", "-next", and "-pause-play") */ 
+#ninja-slider-pause-play { display:none;}    
+
+#ninja-slider-prev, #ninja-slider-next
+{
+    position: absolute;
+    display:inline-block;
+    width:42px;
+    height:56px;
+    line-height:56px;
+    top: 50%;
+    margin-top:-28px;
+    background-color:rgba(0,0,0,0.4);
+    background-color:#ccc\9;/*IE8 hack*/
+    backface-visibility:hidden;
+    color:white;
+    overflow:hidden;
+    white-space:nowrap;
+    -webkit-user-select: none;
+    user-select:none;
+    border-radius:2px;
+    z-index:10;
+    opacity:0.3; 
+    font-family:sans-serif;   
+    font-size:13px;
+    cursor:pointer;
+    -webkit-transition:all 0.7s;
+    transition:all 0.7s;
+}
+
+.slider-inner:hover #ninja-slider-prev, .slider-inner:hover #ninja-slider-next {
+    opacity:1;
+}
+
+
+#ninja-slider-prev {
+    left: 0; 
+}
+#ninja-slider-next {
+    right: 0;
+}
+
+/* arrows */
+#ninja-slider-prev::before, #ninja-slider-next::before {
+    position: absolute;
+    top: 17px;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+}
+
+#ninja-slider-prev::before {
+    -ms-transform:rotate(-45deg);/*IE 9*/
+    -webkit-transform:rotate(-45deg);
+    transform: rotate(-45deg);
+    backface-visibility:hidden;
+    right:4px;
+}
+
+#ninja-slider-next::before {
+    -ms-transform:rotate(135deg);/*IE 9*/
+    -webkit-transform:rotate(135deg);
+    transform: rotate(135deg);
+    backface-visibility:hidden;
+    left:4px;
+}
+
+
+/*pagination num within the arrow buttons*/
+#ninja-slider-prev div, #ninja-slider-next div {display:none;}
+
+
+/*------ pager(nav bullets) ------*/      
+/* The pager id should be: slider id + "-pager" */
+#ninja-slider-pager { display:none;}
+
+
+#ninja-slider-pager, #ninja-slider-prev, #ninja-slider-next, #ninja-slider-pause-play
+{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+/*Responsive settings*/
+@media only screen and (max-width:800px){
+
+    #ninja-slider-prev, #ninja-slider-next, #ninja-slider-pager {
+        display:none;
+    }
+    #ninja-slider .fs-icon {
+        display:none;
+    }
+}
+
+
+
+
+
+
+/*MISSION STATEMENT STYLING
+-----------------------------------------------*/
+
+.mission-statement p {
+	margin: 2em 0;
+	font-size: 20px;
+	color: #000;
+}
+
+/*SERVICES STYLING
+-----------------------------------------------*/
+.services-list i {
+	font-size: 10px;
+	color: #ea268f;
+	padding: 0 5px;
+}
+
+.services-list li {
+	padding: 0.5em 0.5em;
+	font-size: 15px;
+}
+
+
+
+
+/*TESTIMONIALS STYLING
+-----------------------------------------------*/
+
+.client {
+
+}
+
+.client p {
+	line-height: 1.5;
+	font-size: 14px;
+}
+
+.client h4 {
+	margin-top: 0.5em;
+}
+
+
+
+
+
+/*CONTACT FORM STYLING
+-------------------------------*/
+
+.contact-form {
+	margin: 2em 0;
+	width: 100%;
+}
+
+.contact-form h2 {
+	margin-bottom: 0;
+}
+
+.width-input {
+	width: 100%;
+	padding: 1em 0;
+	background: #000;
+}
+
+
+.row {
+	text-align: left;
+	margin: 1em 0;
+	display: block;
+	font-size: 14px;
+}
+
+.label-row {
+	margin-bottom: 0.8em;
+}
+
+fieldset {
+	border: none;
+}
+
+.row input,
+.row textarea,
+.row select {
+	padding: 1em 0;
+	background: #D5D7D9;
+	border: 1px solid #C0C5CC;
+	border-radius: 6px
+}
+
+form legend {
+	margin: 1em 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+	text-align: left;
+}
+
+textarea {
+	border-radius: 6px;
+}
+
+.contact-form input {
+	padding: 1em 0;
+	margin-top: 1em;
+}
+
+.contact-form select {
+	margin-top: 1em;
+}
+
+.check-input {
+	margin-top: 1.5em;
+}
+
+.width-label {
+	width: 20%;
+	display: block;
+}
+
+input.form-button,
+.free-quote button {
+	width: 30%;
+	padding: 0.85em 0;
+	background: #8fc74a;
+	color: #fff;
+	font-size: 22px;
+	border-radius: 50px;
+	border: none;
+	margin-top: 2em;
+}
+
+input.form-button {
+	width: 30%;
+	margin: 20px;
+}
+
+input.form-button:hover,
+.free-quote button:hover{
+	background: #45A9BF;
+}
+
+.options,
+.options select {
+	display: flex;
+	flex-direction: column;
+}
+
+
+/*PSEUDO-CLASSES STYLING
+-----------------------------*/
+::-webkit-input-placeholder { /*Chrome/Opera/Safari*/
+	text-align: right;
+	font-style: italic;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+	text-align: right;
+	font-style: italic;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	text-align: right;
+	font-style: italic;
+}
+:-moz-placeholder { /* Firefox 18- */
+	text-align: right;
+	font-style: italic;
+}
+
+input[type="checkbox"]{
+	width: 5%;
+}
+
+input[type="radio"]{
+	width:5%;
+}
+
+input:focus {
+	background: #E2E7F0;
+	border: 1px solid #6a6a6a;
+}
+
+select:focus {
+	background: #fff;
+	border: 1px solid #6a6a6a;
+}
+
+textarea:focus {
+	background: #fff;
+	border: 1px solid #6a6a6a;
+}
+
+/*FOOTER STYLING
+-----------------------------------------------*/
+.footer {
+	color: #666;
+	text-align: center;
+	padding: 0.5em 0;
+	background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+	color: #fff;
+}
+
+.footer li {
+	display: inline-block;
+	padding: 0 0.5em;
+}
+
+.footer h4,
+.footer-lush h4 {
+	font-size: 18px;
+}
+
+.footer i {
+	font-size: 18px;
+}
+
+.footer a {
+	color: #fff;
+	margin: 0 -1.5em;
+}
+
+.footer a:hover {
+	color: #ee3234;
+}
+
+
+.worksafe-image img{
+	margin: 0 auto;
+	max-width: 25%;
+	padding: 0.5em 0 1.5em 0 ;
+}
+
+.back-to-top {
+	background: rgba(0, 0, 0, 0.8);
+	padding-bottom: 0.5em;
+}
+
+.back-to-top a:hover {
+	color: #ee3234;
+}
+
+/*MEDIA QUERIES
+-----------------------------------------*/
+
+@media (min-width: 760px) {
+	.container{
+		width: 90%;
+		font-size: 18px;
+	}
+
+	p {
+		padding: 0 5em;
+	}
+	
+	/*LOGO STYLING
+	-------------------------------------------------*/
+	.header-logos {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+
+	.logo-cans {
+		width: 60%;
+	}
+
+
+
+	.header-logos h4 {
+		font-size: 16px;
+		padding-bottom: 1em;
+		margin-top: 3em;
+	}
+
+	.header-logos a {
+		margin-top: 1.8em;
+	}
+	
+	/*MENU STYLING
+	-------------------------------------------------*/
+	nav {
+		width: 100%;
+	}
+	
+	
+	/*BEFORE & AFTER STYLING
+	-------------------------------------------------*/
+	
+	.images {
+		flex: 1 0 336px;
+	}
+	
+	/*SERVICES STYLING
+	--------------------------------------------------*/
+	.services-list i {
+		font-size: 12px;
+	}
+
+	.services-list li {
+		font-size: 20px;
+	}
+
+	/*TESTIMONIALS STYLING
+	--------------------------------------------------*/
+	
+	.testimonials {
+		margin: 0 1em;
+		padding: 0 0;
+	}
+
+	.client {
+		padding: 0 4em;
+	}
+
+	.client p {
+		line-height: 1.7;
+		font-size: 17px;
+	}
+	
+	.client h4 {
+		margin-top: 0.5em;
+	}
+	
+	/*FORM STYLING
+	--------------------------------------------------*/
+	
+	.contact-form{
+		width:80%;
+		margin: 0 auto;
+	}
+	
+	.row {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.row input,
+	select{
+		margin-left: 2em;
+	}
+	
+	.check {
+		display: block;
+	}
+	
+	.check-input {
+		margin-top: 2em;
+	}
+
+	.width-label {
+		width: 16%;
+	}
+	
+	label {
+		width: 16%;
+		padding: 1.8em 0;
+		height: 50px;
+	}
+	
+	
+	textarea {
+		width: 80%;
+		margin-left: 2em;
+	}
+
+	/*FOOTER STYLING
+	-------------------------------------------------*/
+	.worksafe-image img{
+		max-width: 20%;
+	}
+}
+
+/*__________________________________________________________________________*/
+
+
+@media (min-width: 1024px) {
+	
+	.container {
+		width: 90%;
+		max-width:1024px;
+		margin: 0 auto;
+	}
+	
+	p {
+		line-height: 1.5;
+		padding: 0 10em;
+	}
+
+	/*MENU STYLING
+	----------------------------------------------------*/
+	nav {
+		max-width:1024px;
+	}
+	
+	
+	.header-logos {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-left: 3em;
+	}
+	
+	.logo-cans {
+		width: 70%;
+	}
+
+	.logo-words {
+		width: 100%;
+/*		height: 8em;*/
+
+	}
+
+	.header-logos h4 {
+		font-size: 16px;
+		padding-bottom: 1em;
+		margin-top: 3em;
+		
+	}
+	
+	.header-logos a {
+		margin-top: 1.8em;
+	}
+
+	
+	/*SERVICES STYLING
+	--------------------------------------------------*/
+	.services-list i {
+		font-size: 13px;
+	}
+
+	.services-list li {
+		font-size: 24px;
+	}
+
+	
+	/*BEFORE & AFTER STYLING
+	----------------------------------------------------*/
+	
+	.images {
+		margin: 0 1em;
+		flex: 1 0 200px;
+	}
+
+	/*CONTACT FORM STYLING
+	---------------------------------------------------*/
+	
+	.contact-form {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+	.width-input {
+	width: 100%;
+	padding: 1em 0;
+	}
+	
+	label {
+		width: 10%;
+		padding: 1.8em 0;
+		height: 50px;
+	}
+
+	/*FOOTER STYLING
+	-----------------------------------------------------*/	
+	.worksafe-image img{
+
+	max-width: 15%;
+	
+	}
+	
+	.footer-lush {
+	font-size: 20px;
+	padding-bottom: 1em;
+}
+}
